@@ -12,10 +12,23 @@
     tools:context="com.pr.saathi.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HelloWorld"
-        android:background="black"/>
+        android:text="@string/login_label"
+        android:id="@+id/login"
+        android:layout_marginTop="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/signup"
+        android:layout_alignStart="@+id/signup" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_label"
+        android:id="@+id/signup"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
